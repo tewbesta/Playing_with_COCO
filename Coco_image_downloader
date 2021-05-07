@@ -15,8 +15,7 @@ parser.add_argument('--imagenet_info_json', type =str,required =True )
 args, args_other = parser.parse_known_args()
 print(args.images_per_subclass)
 print(args.subclass_list)
-
-        #from PIL import Image
+#from PIL import Image
 from requests.exceptions import ConnectionError,ReadTimeout,TooManyRedirects,MissingSchema,InvalidURL
 count=0
 def get_image(img_url, class_folder):
